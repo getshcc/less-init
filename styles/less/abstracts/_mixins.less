@@ -1,0 +1,39 @@
+.border (@size, @type, @color){
+    -webkit-border: @arguments;
+    -moz-border: @arguments;
+    -ms-border: @arguments;
+    border: @arguments;
+    // border: @size @type @color;
+}
+
+.border-radius (@size){
+    -webkit-border-radius: @size;
+    -moz-border-radius: @size;
+    -ms-border-radius: @size;
+    border-radius: @size;
+}
+
+.shadow( @x, @y, @blur, @color){
+    box-shadow: @arguments;
+}
+
+.min (@width; @content){
+    @media screen and (min-width: @width) {
+        @content();        
+    }
+}
+
+.max (@width; @content){
+    @media screen and (max-width: @width) {
+        @content();        
+    }
+}
+
+// Usage:
+
+// .selector{
+//     .min/max(@sm,{
+//         bgc: red;
+//     })
+    
+// }

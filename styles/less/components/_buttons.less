@@ -1,0 +1,26 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @mdc-grey-100;
+    padding: 12px 32px;
+    border: none;
+    margin: @s-d;
+     margin-top: 32px;
+    .border-radius(3px);
+    .border(1px, solid, darken(@bgColor, 10%));
+
+    &-success{
+        background-color: @mdc-green-500;
+    }
+    &-warning{
+        background-color: @mdc-yellow-500;
+    }
+    &-priamry{
+        background-color: @mdc-blue-500;
+    }
+}
+
+.hello{
+    .shadow(3px, 3px, 18px, darken(@bgColor, 4%))
+}
